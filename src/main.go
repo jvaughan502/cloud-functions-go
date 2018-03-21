@@ -20,16 +20,12 @@ import (
 	"flag"
 	"fmt"
 	"github.com/PagerDuty/go-pagerduty"
-	logging "github.com/spf13/jwalterweatherman"
 	"golang.org/x/net/context"
 	"google.golang.org/api/iterator"
 	"io"
-	"log"
 	"net/http"
-	"os"
 	"path"
 	"strings"
-	"syscall"
 
 	"../nodego"
 )
@@ -55,8 +51,6 @@ func main() {
 			svcKey = "7b4f4d1ca76a42a8a85487e1fc47a981"
 		}
 
-		//Initialize logger, pubsub, then create list of expected topics/subscriptions and check against project
-		// InitLogger()
 		InitPubSub(*project)
 		topSubs := createList(*project)
 		topicSubscriptions(*project, topSubs)
