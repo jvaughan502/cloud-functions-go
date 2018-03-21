@@ -71,8 +71,8 @@ func InitPubSub(project string) error {
 	}
 	pubSubClient = client
 
-	return nil
 	fmt.Println("INITPUBSUB")
+	return nil
 }
 
 //Create project specific list of topics and subscriptions
@@ -161,8 +161,8 @@ func createList(project string) map[string][]string {
 	} else {
 		fmt.Println("ERROR -- Please choose hd-www-dev, hd-www-stage, or hd-www-prod")
 	}
-	return pairs
 	fmt.Println("CREATELIST")
+	return pairs
 }
 
 //Call project topics and subscriptions and compare vs. what is expected
