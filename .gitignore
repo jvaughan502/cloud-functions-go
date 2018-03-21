@@ -1,9 +1,9 @@
 build
-/src/examples
-/src/nodego
-/src/*.go
-/src/*.md
-/src/*.sh
-/src/function.zip
-/src/Makefile
-/src/Vagrantfile
+/examples
+/nodego
+*.go
+*.md
+*.sh
+function.zip
+Makefile
+Vagrantfile
