@@ -24,7 +24,6 @@ import (
 	"google.golang.org/api/iterator"
 	"io"
 	"net/http"
-	"path"
 	"strings"
 
 	"../nodego"
