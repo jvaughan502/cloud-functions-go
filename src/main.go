@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"./nodego"
+	"../nodego"
 )
 
 func main() {

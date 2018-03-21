@@ -1,7 +1,6 @@
 build
 /examples
 /nodego
-*.go
 *.md
 *.sh
 function.zip
