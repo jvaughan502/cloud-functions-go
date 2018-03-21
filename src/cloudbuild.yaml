@@ -5,7 +5,7 @@ steps:
     "GOARCH=amd64",
     "GOOS=linux",
     "CGO_ENABLED=0",
-    "GOPATH=$PWD"
+    "GOPATH=/workspace"
   ]
 - name: "gcr.io/cloud-builders/npm"
   args: ["install", "--ignore-scripts", "-save", "local_modules/execer"]
