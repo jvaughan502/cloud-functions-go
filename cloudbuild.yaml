@@ -1,12 +1,18 @@
 steps:
 - name: "gcr.io/cloud-builders/go"
-  args: [
-    "get", "cloud.google.com/go/pubsub",
-    "get", "github.com/PagerDuty/go-pagerduty",
-    "get", "github.com/spf13/jwalterweatherman",
-    "get", "golang.org/x/net/context",
-    "get", "google.golang.org/api/iterator"
-  ]
+  args: ["get", "cloud.google.com/go/pubsub"]
+  env: ["GOPATH=/workspace"]
+- name: "gcr.io/cloud-builders/go"
+  args: ["get", "github.com/PagerDuty/go-pagerduty"]
+  env: ["GOPATH=/workspace"]
+- name: "gcr.io/cloud-builders/go"
+  args: ["get", "github.com/spf13/jwalterweatherman"]
+  env: ["GOPATH=/workspace"]
+- name: "gcr.io/cloud-builders/go"
+  args: ["get", "golang.org/x/net/context"]
+  env: ["GOPATH=/workspace"]
+- name: "gcr.io/cloud-builders/go"
+  args: ["get", "google.golang.org/api/iterator"]
   env: ["GOPATH=/workspace"]
 - name: "gcr.io/cloud-builders/go"
   args: ["build", "-tags","node","src/main.go"]
