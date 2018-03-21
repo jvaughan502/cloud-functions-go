@@ -41,7 +41,7 @@ const (
 	maxLogLength          = 5000
 	maxLogBatchEntries    = 1500
 	maxLogBatchLength     = 150000
-	supervisorKillTimeout = 5 * time.Second
+	supervisorKillTimeout = 60 * time.Second
 )
 
 var (
