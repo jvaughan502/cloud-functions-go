@@ -19,4 +19,3 @@ steps:
     "--trigger-http",
     "--project","${PROJECT_ID}"
   ]
-
