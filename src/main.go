@@ -49,7 +49,7 @@ func main() {
 		} else {
 			svcKey = "7b4f4d1ca76a42a8a85487e1fc47a981"
 		}
-
+		fmt.Println("MAIN")
 		InitPubSub(*project)
 		topSubs := createList(*project)
 		topicSubscriptions(*project, topSubs)
@@ -72,6 +72,7 @@ func InitPubSub(project string) error {
 	pubSubClient = client
 
 	return nil
+	fmt.Println("INITPUBSUB")
 }
 
 //Create project specific list of topics and subscriptions
@@ -161,6 +162,7 @@ func createList(project string) map[string][]string {
 		fmt.Println("ERROR -- Please choose hd-www-dev, hd-www-stage, or hd-www-prod")
 	}
 	return pairs
+	fmt.Println("CREATELIST")
 }
 
 //Call project topics and subscriptions and compare vs. what is expected
@@ -242,6 +244,7 @@ func topicSubscriptions(project string, topSubs map[string][]string) {
 			pdHook("Missing Subscription: " + e)
 		}
 	}
+	fmt.Println("TOPICSUBS")
 
 }
 
