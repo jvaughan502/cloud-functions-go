@@ -17,6 +17,6 @@ steps:
     "--entry-point","${_ENTRY_POINT}",
     "--source","./",
     "--trigger-http",
-    "--project","${_PROJECT_ID}"
+    "--project","${PROJECT_ID}"
   ]
 

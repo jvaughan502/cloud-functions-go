@@ -7,5 +7,4 @@ build
 function.zip
 Makefile
 Vagrantfile
-node_modules
 main
