@@ -1,11 +1,11 @@
 steps:
 - name: "gcr.io/cloud-builders/go"
-  args: ["build", "-tags","node","main.go"]
+  args: ["build", "-tags","node","src/main.go"]
   env: [
     "GOARCH=amd64",
     "GOOS=linux",
     "CGO_ENABLED=0",
-    "GOPATH=/workspace"
+    "GOPATH=$PWD"
   ]
 - name: "gcr.io/cloud-builders/npm"
   args: ["install", "--ignore-scripts", "-save", "local_modules/execer"]
