@@ -31,7 +31,7 @@ import (
 	"strings"
 	"syscall"
 
-	"./nodego"
+	"../nodego"
 )
 
 var pubSubClient *pubsub.Client
